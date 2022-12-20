@@ -6,5 +6,5 @@ Each line in the trace file is one memory transaction by one of the processors. 
 For example, if you read the line 5 w 0xabcd from the trace file, that means processor 5 is writing to the address “0xabcd” in its local cache. This means the request will propagate down to cache 5, and cache 5 will take care of that request.
 
 Command line arguments:\
-./smp_cache \<cache_size\> \<assoc\> \<block_size\> \<num_processors\> \<protocol\> \<trace_file\>
+./smp_cache \<cache_size\> \<assoc\> \<block_size\> \<num_processors\> \<protocol\> \<trace_file\>\
 (protocol = 0:MSI 1:MSI BusUpgr 2:MESI 3:MESI with Snoop Filter)
